@@ -1,29 +1,22 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
+import Layout from '../components/layout/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import SEO from '../components/layout/seo'
 
-import Layout from '../components/layout'
-import Seo from '../components/seo'
-
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={['AUTO', 'WEBP', 'AVIF']}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
+function IndexPage() {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <StaticImage src="../assets/images/logos/logo.svg" alt="logo" />
+      <h1>Design and code React apps</h1>
+      <p>
+        Don’t skip design. Learn design and code, by building real apps with
+        React and Swift. Complete courses about the best tools.
+      </p>
       <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default IndexPage
