@@ -1,0 +1,54 @@
+{
+  "name": "dc-react-hooks",
+  "private": true,
+  "description": "Source files for Design+Code 'Build a Web App with React Hooks course.",
+  "version": "0.1.0",
+  "author": "George Bockari <george@revisioned.consulting>",
+  "dependencies": {
+    "gatsby": "^3.11.1",
+    "gatsby-plugin-gatsby-cloud": "^2.11.0",
+    "gatsby-plugin-image": "^1.11.0",
+    "gatsby-plugin-manifest": "^3.11.0",
+    "gatsby-plugin-offline": "^4.11.0",
+    "gatsby-plugin-react-helmet": "^4.11.0",
+    "gatsby-plugin-sharp": "^3.11.0",
+    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-sharp": "^3.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "prettier": "2.3.2",
+    "write": "^2.0.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "yarn develop",
+    "commit": "cz",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": "github:bitwhys/dc-react-hooks",
+  "bugs": {
+    "url": "https://github.com/bitwhys/dc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/bitwhys/dc-react-hooks#readme",
+  "main": "gatsby-browser.js",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
