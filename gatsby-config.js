@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://cr8iv.io/`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

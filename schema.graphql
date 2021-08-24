@@ -762,6 +762,12 @@ type SitePlugin implements Node {
 }
 
 type SitePluginPluginOptions {
+  displayName: Boolean
+  fileName: Boolean
+  minify: Boolean
+  namespace: String
+  transpileTemplateLiterals: Boolean
+  pure: Boolean
   name: String
   path: String
   base64Width: Int
@@ -1853,6 +1859,12 @@ input SitePluginFilterInput {
 }
 
 input SitePluginPluginOptionsFilterInput {
+  displayName: BooleanQueryOperatorInput
+  fileName: BooleanQueryOperatorInput
+  minify: BooleanQueryOperatorInput
+  namespace: StringQueryOperatorInput
+  transpileTemplateLiterals: BooleanQueryOperatorInput
+  pure: BooleanQueryOperatorInput
   name: StringQueryOperatorInput
   path: StringQueryOperatorInput
   base64Width: IntQueryOperatorInput
@@ -2069,6 +2081,12 @@ enum SitePageFieldsEnum {
   pluginCreator___resolve
   pluginCreator___name
   pluginCreator___version
+  pluginCreator___pluginOptions___displayName
+  pluginCreator___pluginOptions___fileName
+  pluginCreator___pluginOptions___minify
+  pluginCreator___pluginOptions___namespace
+  pluginCreator___pluginOptions___transpileTemplateLiterals
+  pluginCreator___pluginOptions___pure
   pluginCreator___pluginOptions___name
   pluginCreator___pluginOptions___path
   pluginCreator___pluginOptions___base64Width
@@ -2404,6 +2422,12 @@ enum SitePluginFieldsEnum {
   resolve
   name
   version
+  pluginOptions___displayName
+  pluginOptions___fileName
+  pluginOptions___minify
+  pluginOptions___namespace
+  pluginOptions___transpileTemplateLiterals
+  pluginOptions___pure
   pluginOptions___name
   pluginOptions___path
   pluginOptions___base64Width
